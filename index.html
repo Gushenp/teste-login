@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section id="imagem"></section>
+        <section id="formulario">
+            <h1>Login</h1>
+            <p>Bem vindo(a) ao <strong>CatCafé!</strong></p>
+            <p>Faça login para acessar sua conta e poder aproveitar todos os momentos aconchegantes que temos guardados para você!</p>
+
+            <form method="post" action="lista.php">
+
+                <div id="emailsenha">
+                    <label for="ema"><img src="images/patinha.png" alt="" class="imgicons"> | Usuário</label>
+                    <input type="email" placeholder="Digite seu email..." id="ema" class="email">
+                </div>
+
+                <div id="emailsenha">
+                    <label for="pss"><img src="images/xicara.png" alt="" class="imgicons"> | Senha</label>
+                    <input type="password" placeholder="Digite sua senha..." id="pss" class="senha">
+                </div>
+
+                <input type="button" value="Enviar" class="botao" onclick="principal()">
+
+            </form>
+
+            <a href="">Esqueci a senha</a>
+        </section>
+        <script>
+            function principal() {
+                window.location.href = 'outra.html'
+            }
+        </script>
+    </main>
+</body>
+</html>
