@@ -1,12 +1,30 @@
 @charset "UTF-8";
 
 body{
-    background-color: green;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
 main{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    height: 500px;
     max-width: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: block;
+}
+
+#imagem{
+    height: 500px;
+    padding: 0px;
+    margin: 0px;
 }
 
 #formu{
