@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="tablets.css" media="screen and (min-width: 550px) and (max-width: 900px)">
+
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 901px)">
+
     <title>Login</title>
 </head>
 <body>
@@ -16,15 +21,15 @@
             <p>Bem vindo(a) ao <strong>CatCafé!</strong></p>
             <p>Faça login para acessar sua conta e poder aproveitar todos os momentos aconchegantes que temos guardados para você!</p>
 
-            <form method="post" action="lista.php">
+            <form method="post" action="lista.php" id="formu">
 
                 <div id="emailsenha">
-                    <label for="ema"><img src="images/patinha.png" alt="" class="imgicons"> | Usuário</label>
+                    <label for="ema"><img src="images/patinha.png" alt="" class="imgicons"><p> | Usuário</p></label>
                     <input type="email" placeholder="Digite seu email..." id="ema" class="email">
                 </div>
 
                 <div id="emailsenha">
-                    <label for="pss"><img src="images/xicara.png" alt="" class="imgicons"> | Senha</label>
+                    <label for="pss"><img src="images/xicara.png" alt="" class="imgicons"><p> | Senha</p></label>
                     <input type="password" placeholder="Digite sua senha..." id="pss" class="senha">
                 </div>
 
@@ -34,11 +39,7 @@
 
             <a href="">Esqueci a senha</a>
         </section>
-        <script>
-            function principal() {
-                window.location.href = 'outra.html'
-            }
-        </script>
+
     </main>
 </body>
 </html>
